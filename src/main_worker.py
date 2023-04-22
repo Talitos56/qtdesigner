@@ -1,8 +1,13 @@
 import sys
 
+from PySide6.QtCore import QObject
 from PySide6.QtWidgets import QApplication, QWidget
 
 from worker import Ui_myWidget
+
+
+class Worker1(QObject):
+    ...
 
 
 class MyWidget(QWidget, Ui_myWidget):
