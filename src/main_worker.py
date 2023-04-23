@@ -16,7 +16,7 @@ class Worker1(QObject):
         value = '0'
         self.started.emit(value)
         for i in range(5):
-            value = str(i)
+            value = str(i+1)
             self.progressed.emit(value)
             time.sleep(1)
         self.finished.emit(value)
